@@ -8,6 +8,7 @@ Blockchain project POC
 4. [Usage](#Usage)
 5. [Run](#Run)
 6. [Licensing](#Licensing)
+7. [Convetions](#Convetions)
 
 ## Disclaimer
 A short description goes here
@@ -65,3 +66,35 @@ npm start
 
 ## Licensing
 License description will go here
+
+## Convetions
+### Branch Naming Convetions
+A branching strategy is a set of rules, a convention that helps teams and developers – they can follow these rules and conventions to create a new branch, its flow, etc.
+
+#### Feature Branch
+```sh
+feature-{ticketId}-narration
+```
+
+#### Bug Fix Branch
+```sh
+bugfix-{ticketId}-narration
+```
+
+#### Hot Fix Branch
+```sh
+hotfix-{ticketId}-narration
+```
+
+### Commit Message Conventions
+Git commit message is the best way to communicate context about a change to fellow developers (and indeed to their future selves). A diff will tell you what changed, but only the commit message can properly tell you why. Developers can follow these rules and conventions to commit a message.
+
+#### Feature Commit Message
+```sh
+feat: [{ticketId}] commit message <Developers Name>
+```
+
+#### Bug Fix Commit Message
+```sh
+fix: [{ticketId}] commit message <Developers Name>
+```
