@@ -4,7 +4,10 @@
   "description": "Blockchain project POC",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "prettier --write \"**/*.js\" && eslint . --ext .js --fix && cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "format": "prettier --write \"**/*.js\"",
+    "lint": "eslint . --ext .js --fix"
   },
   "repository": {
     "type": "git",
@@ -18,9 +21,17 @@
   "homepage": "https://github.com/dianapps-vaibhav/24G-poc#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.2.3"
+    "mongoose": "^6.2.3",
+    "prettier": "^2.5.1",
+    "web3": "^1.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
   }
 }
