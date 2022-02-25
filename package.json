@@ -4,8 +4,9 @@
   "description": "Blockchain project POC",
   "main": "index.js",
   "scripts": {
-    "start": "prettier --write \"**/*.js\" && eslint . --ext .js --fix && cross-env NODE_ENV=production node index.js",
-    "dev": "cross-env NODE_ENV=development nodemon",
+    "start": "npm run format && npm run lint && npm run dev",
+    "dev": "cross-env NODE_ENV=production node index.js",
+    "watch": "cross-env NODE_ENV=development nodemon",
     "format": "prettier --write \"**/*.js\"",
     "lint": "eslint . --ext .js --fix"
   },
