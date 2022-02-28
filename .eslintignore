@@ -2,3 +2,8 @@ node_modules
 build
 public
 views
+src/services/mainModel.service.ts
+src/libs/seedar.ts
+src/libs
+src/graphQL
+src/interfaces/common/looseObject.interface.ts
