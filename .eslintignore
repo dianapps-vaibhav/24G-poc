@@ -2,6 +2,10 @@ node_modules
 build
 public
 views
+.github
+contracts
+migrations
+test
 src/services/mainModel.service.ts
 src/libs/seedar.ts
 src/libs
